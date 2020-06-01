@@ -6,7 +6,7 @@ RUN apt-get update; \
     apt-get upgrade -y; \
     apt-get install -y libxml2 libxslt1.1 zlib1g python3-pip; \
     pip3 install -U pip; \
-    pip3 install vdirsyncer
+    pip3 install vdirsyncer==0.16.7
 USER vds
 RUN mkdir -p /home/vds/.config/vdirsyncer/
 COPY ./docker-entrypoint.sh /
