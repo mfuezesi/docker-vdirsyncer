@@ -2,7 +2,7 @@ version: '3'
 services:
 
   worker:
-    image: kaergel/vdirsyncer
+    image: mfuezesi/vdirsyncer:0.16.7
     volumes:
       - ./config:/home/vds/.config/vdirsyncer/config
     restart: always
